@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/button_row"
+        >
+    <Button android:id="@+id/finger1button"
+                 android:layout_weight="1"
+                 android:layout_width="0dip"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentTop="true"
+                 android:text="Finger 1 Sound"
+
+                 android:drawableTop="@android:drawable/ic_menu_preferences"
+                 />
+    <Button android:id="@+id/finger2button"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 android:text="Finger 2 Sound"
+        android:drawableTop="@android:drawable/ic_menu_preferences"
+            />
+
+
+
+    <Button android:id="@+id/discardbutton"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/discard"
+            android:visibility="gone"
+            android:drawableTop="@android:drawable/ic_menu_delete"
+
+            />
+    <Button android:id="@+id/save_button"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/save"
+            android:visibility="gone"
+            android:drawableTop="@android:drawable/ic_menu_save"
+            />
+
+    </LinearLayout>
+
+    <Button android:text="The Ringtone Monkey"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/auto_mode_button"
+            android:drawableLeft="@drawable/icon48"
+
+            />
+
+
+  	<com.monadpad.tonezart.MonadaphoneView
+             android:id="@+id/mpad"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_above="@id/auto_mode_button"
+             android:layout_below="@id/button_row"
+              />
+
+</RelativeLayout>

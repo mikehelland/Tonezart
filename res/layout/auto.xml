@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/cubes3"
+              android:orientation="vertical"
+              android:gravity="bottom"
+
+              >
+
+
+    <Button android:id="@+id/save_this_button"
+            android:text="Save!"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:padding="8dip"
+            android:layout_alignParentTop="true"
+
+            />
+
+
+
+    <Button android:id="@+id/manual_mode_button"
+            android:text="Manual Mode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:padding="8dip"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    <Button android:id="@+id/something_else_button"
+            android:text="Play Something Else!"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:padding="8dip"
+            android:layout_above="@id/manual_mode_button"
+            />
+
+
+    <ImageView android:src="@drawable/leibniz_head2" android:layout_below="@id/save_this_button"
+
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:id="@+id/leibniz_head"
+
+               android:layout_centerHorizontal="true"
+
+               />
+
+</RelativeLayout>

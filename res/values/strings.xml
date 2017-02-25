@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tonezart</string>
+
+    <string name="record_caption_1">To create a Ringtone</string>
+    <string name="record_caption_2">Draw Here!</string>
+    <string name="record_caption_3">When you are finished</string>
+    <string name="record_caption_4">Press Save!</string>
+    <string name="save_ringtone_contact">Save as Ringtone for Contact…</string>
+    <string name="discard">Discard</string>
+    <string name="save">Save!</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="150dip"
+        >
+
+
+    <Button android:id="@+id/finger1button"
+                 android:layout_weight="1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="0dip"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentTop="true"
+                 android:text="Finger 1 Sound"
+                 android:drawableTop="@android:drawable/ic_menu_preferences"
+                 />
+    <Button android:id="@+id/finger2button"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 android:text="Finger 2 Sound"
+        android:drawableTop="@android:drawable/ic_menu_preferences"
+            />
+
+
+
+    <Button android:id="@+id/discardbutton"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Discard Recording"
+            android:visibility="gone"
+            android:drawableTop="@android:drawable/ic_menu_delete"
+
+            />
+    <Button android:id="@+id/save_button"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Save!"
+            android:visibility="gone"
+            android:drawableTop="@android:drawable/ic_menu_save"
+            />
+
+    </LinearLayout>
+
+
+  	<com.monadpad.tonezart.MonadaphoneView
+                             android:id="@+id/mpad"
+                             android:layout_width="fill_parent"
+                             android:layout_height="fill_parent"
+              />
+
+</LinearLayout>
